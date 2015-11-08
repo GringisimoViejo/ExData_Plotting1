@@ -1,4 +1,4 @@
-power <- read.csv("household_power_consumption.txt", header=TRUE, stringsAsFactors = FALSE, sep=";")
+power <- read.table("household_power_consumption.txt", header=TRUE, stringsAsFactors = FALSE, sep=";")
   Date_Time <- vector()
   Date_Time <- paste(power$Date, " ", power$Time)
   Date_Time <- strptime(Date_Time, format = "%d/%m/%Y %H:%M:%S")
